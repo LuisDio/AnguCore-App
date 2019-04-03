@@ -11,7 +11,7 @@ export class CustomersListComponent implements OnInit {
 
   // Private properties
   private _customers: ICustomer[] = [];
-  @Input() 
+  @Input()
   get customers(): ICustomer[] {
       return this._customers;
   }
@@ -26,7 +26,7 @@ export class CustomersListComponent implements OnInit {
   // Properties
   filteredCustomers: any[] = [];
   customersOrderTotal: number;
-  currencyCode: string = 'USD';
+  currencyCode = 'USD';
 
   constructor(private sorterService: SorterService) { }
 
