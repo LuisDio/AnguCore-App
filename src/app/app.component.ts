@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
-@Component({
+@Component({ 
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `
+    <app-customers></app-customers>
+  `
 })
-export class AppComponent {
-  title = 'angu-app';
+export class AppComponent implements OnInit {
+
+  constructor() { }
+
+  ngOnInit() {
+    // We call a service that gets us the data
+  }
+  
 }
